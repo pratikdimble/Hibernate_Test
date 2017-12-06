@@ -1,0 +1,15 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<class name="com.pratik.Emp" table="emp">
+  
+    <id name="eid" column="ID" type="int" length="10" />  <!--Primary Key-->
+    
+		<property name="ename" column="name" type="string" length="20"/>
+		<property name="esalary" column="salary" type="float" length="10" precision="2" />
+		<property name="ecity" column="city" type="string" length="20" />
+	</class>
+</hibernate-mapping>
